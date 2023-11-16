@@ -163,4 +163,84 @@ int main()
     return 0;
 }
 */
+/*
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i=0;
+    cin>>n;
+    while(i*i<n)
+    {
+        i++;
+    }
+    if(i*i==n)
+    {
+        cout<<n<<" are nr impar de divizori";
+    }
+    else
+    {
+        cout<<n<<" nu are nr impar de divizori";
+    }
+
+    return 0;
+}
+*/
+/*
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i=0,s=1,m;
+    cin>>n>>m;
+    for(i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            s+=i;
+            s+=n/i;
+        }
+    }
+    if(s==m)
+    {
+        cout<<n<<" si "<<m<<" sunt numere prietene";
+    }
+    else
+    {
+        cout<<n<<" si "<<m<<"nu sunt numere prietene";
+    }
+    return 0;
+}
+*/
+/*
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i=0,s=1,m,nr=0;
+    double ma;
+    cin>>n;
+    for(i=1;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            s+=i;
+            s+=n/i;
+            nr+=2;
+        }
+    }
+    ma=double(s)/nr;
+    ma=ma*100;
+    ma=int(ma);
+    ma=double(ma)/100;
+    cout<<ma;
+    return 0;
+}
+*/
 
