@@ -1,0 +1,154 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+/*
+Problema 1 
+int main()
+{
+    int n,i;
+    cin>>n;
+    for(i=2;i*i<n;i++)
+    {
+        if(n%i==0&&i!=n)
+        {
+            cout<<i*i;
+            ok=1;
+            break;
+        }
+    }
+    if(ok==0)
+    {
+        cout<<"nu are divizori prim";
+    }
+
+    return 0;
+}*/
+/*
+Problema 1 
+int main()
+{
+    int n,d=0;
+    cin>>n;
+    while(n%d!=0)
+    {
+        d++;
+    }
+    if(d==n)
+    {
+        cout<<n<<"nu are divizori propri";
+    }
+    else
+    {
+        cout<<d*d;
+    }
+
+    return 0;
+}*/
+/*
+problema 
+int main()
+{
+    int n,m,d,i;
+    cin>>n>>m;
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0&&m%i==0)
+        {
+            cout<<i<<" ";
+        }
+    }
+    
+    
+    return 0;
+}
+*/
+/*
+problema 3
+int main()
+{
+    int n,m,d,i,ogl=0,c,nr=0;
+    cin>>n;
+    c=n;
+    while(c>0)
+    {
+        ogl=ogl*10+c%10;
+        c=c/10;
+    }
+    for(i=1;i*i<ogl;i++)
+    {
+        if(ogl%i==0)
+        {
+            nr+=2;
+        }
+    }
+    if(i*i==ogl)
+    {
+        nr++;
+    }
+    cout<<nr;
+    return 0;
+}*/
+/*
+int main()
+{
+    int n,m,d,i,ogl=0,c,s=0,x,z;
+    cin>>x;
+    for(z=1;z<=x;z++)
+    {
+    cin>>n;
+    c=n;
+    while(c>0)
+    {
+        ogl=ogl*10+c%10;
+        c=c/10;
+    }
+    for(i=1;i*i<ogl;i++)
+    {
+        if(ogl%i==0)
+        {
+            s+=i;
+            s+=ogl/i;
+        }
+    }
+    s+=n+1;
+    if(i*i==ogl)
+    {
+        s+=i;
+    }
+        
+    }
+    cout<<s;
+    return 0;
+}*/
+int main()
+{
+    int n,m,d,i,ogl=0,c,s=0,x,z;
+    cin>>x;
+    for(z=1;z<=x;z++)
+    {
+    cin>>n;
+    c=n;
+    while(c>0)
+    {
+        ogl=ogl*10+c%10;
+        c=c/10;
+    }
+    for(i=1;i*i<ogl;i++)
+    {
+        if(ogl%i==0)
+        {
+            s+=i;
+            s+=ogl/i;
+        }
+    }
+    s+=n+1;
+    if(i*i==ogl)
+    {
+        s+=i;
+    }
+        
+    }
+    cout<<s;
+    return 0;
+}
+
